@@ -23,7 +23,8 @@ This tool automates what should be a basic human responsibility: cleaning up aft
 
 ## Installation
 
-Prerequisites: 
+Prerequisites:
+
 - Pulumi CLI
 - AWS account
 - GitHub token with repo permissions
@@ -100,6 +101,7 @@ The reaper logs its kills to CloudWatch. Access them in the AWS console, if you 
 - `/aws/lambda/pr-reaper-execution`
 
 A dashboard is automatically created showing:
+
 - PRs warned vs. executed
 - Average lifespan of abandoned PRs
 - Leaderboard of repeat offenders

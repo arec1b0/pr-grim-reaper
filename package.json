@@ -1,0 +1,41 @@
+{
+  "name": "pr-grim-reaper",
+  "version": "0.1.0",
+  "description": "Automatically closes abandoned PRs because your team lacks backbone",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo \"Tests? We don't do that here\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "deploy": "pulumi up",
+    "destroy": "pulumi destroy"
+  },
+  "keywords": [
+    "github",
+    "automation",
+    "pulumi",
+    "aws",
+    "lambda",
+    "pull-requests",
+    "corporate-passive-aggression"
+  ],
+  "author": "Someone With Time To Waste",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "@octokit/rest": "21.1.1",
+    "@pulumi/aws": "6.74.0",
+    "@pulumi/awsx": "2.21.1",
+    "@pulumi/pulumi": "3.159.0",
+    "luxon": "^3.3.0",
+    "pr-grim-reaper": "file:"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.3.0",
+    "@types/node": "^18.16.0",
+    "eslint": "^8.39.0",
+    "typescript": "^5.0.4"
+  }
+}

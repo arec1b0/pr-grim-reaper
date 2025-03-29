@@ -1,0 +1,10 @@
+reaper:
+  warningThreshold: 14
+  executionThreshold: 7
+  repositories: []
+  immunityLabels: ["do-not-close", "work-in-progress"]
+  schedule: "0 4 * * 1"
+messages:
+  warning: "This PR has been inactive for {{days}} days. It will be automatically closed in 7 days unless activity is detected. The machines are watching."
+  closing: "This PR has been closed due to {{days}} days of inactivity. Your code has been judged by the algorithm and found wanting."
+  reprieve: "This PR has been granted a temporary stay of execution. The reaper will return."

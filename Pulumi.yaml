@@ -1,0 +1,5 @@
+name: pr-grim-reaper
+runtime: nodejs
+description: Terminates abandoned PRs because humans lack courage
+backend:
+  url: https://api.pulumi.com
