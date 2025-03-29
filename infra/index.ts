@@ -72,7 +72,9 @@ export const tableName = table.name;
 export const warningFunctionName = warningFunction.name;
 export const executionFunctionName = executionFunction.name;
 export const dashboardUrl = pulumi.interpolate`https://console.aws.amazon.com/cloudwatch/home?dashboards:name=${dashboard.dashboardName}`;
-export const readme = `
+
+// Create Stack README
+export const readme = pulumi.interpolate`
 # PR Grim Reaper
 
 This infrastructure automatically identifies and closes abandoned GitHub pull requests to maintain repository cleanliness and improve team productivity.
